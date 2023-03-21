@@ -7,7 +7,8 @@
     <title>Cadastro de Cliente</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-<php    include_once = "conexao.php";   ?>
+<?php include_once "conexao.php"; 
+?>
 <body>
     <div class="container">
         <h1 class="text-center mt-5 mb-3">Cadastro de Cliente</h1>
@@ -21,20 +22,19 @@
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="telefone">Telefone:</label>
-                <input type="text" class="form-control" id="telefone" name="telefone" required>
+                <label for="celular">Telefone:</label>
+                <input type="tel" class="form-control" id="celular" name="celular" required>
             </div>
             <div class="form-group">
-                <label for="endereco">Observação:</label>
-                <input type="text" class="form-control" id="observacao" name="observacao" required>
+                <label for="obs">Observação:</label>
+                <input type="text" class="form-control" id="obs" name="obs" required>
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
     </div>
 
-    <!-- Incluindo o JavaScript do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Incluindo do Bootstrap -->
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
