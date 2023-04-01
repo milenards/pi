@@ -7,17 +7,14 @@ $telefone = $_POST['telefone'];
 $observacao = $_POST['obs'];
 
 
-$sql = "INSERT INTO cad_Clientes (nome, email, telefone, obs) VALUES ('$nome', '$email', '$telefone', '$observacao')";
+$sqlAltera = "OUPDATE cad_Clientes SET nome = '$nome', email, telefone, obs) VALUES ('$nome', '$email', '$telefone', '$observacao')";
 
 
-if ($conexao->query($sql) === TRUE) {
-    echo "Registro inserido com sucesso!";
+if ($conexao->query($sqlAltera) === TRUE) {
+    echo "Registro alterado com sucesso!";
 } else {
     echo "Erro ao inserir registro: " . $conexao->error;
 }
 
-
 mysqli_close($conexao);
-
 ?>
-

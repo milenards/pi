@@ -5,10 +5,10 @@ $password = "";
 $bd = "bd_pi";
 
 
-// Cria uma conexão com o banco de dados
+// //Cria uma conexão com o banco de dados
 // $conexao = mysqli_connect($server, $usuario, $password, $bd);
 
-// Verifica se a conexão foi estabelecida com sucesso
+// //Verifica se a conexão foi estabelecida com sucesso
 // if (!$conexao) {
 //     die("Falha na conexão: " . mysqli_connect_error());
 // }
