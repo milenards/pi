@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<h1 class="text-center mt-5 mb-3">Cadastro de Cliente</h1>
 <?php
 include_once "formulario.php"
 

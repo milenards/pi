@@ -1,9 +1,9 @@
 <div class="container">
-        <h1 class="text-center mt-5 mb-3">Cadastro de Cliente</h1>
+        <!-- <h1 class="text-center mt-5 mb-3">Cadastro de Cliente</h1> -->
         
         <form action="validarConexao.php" method="POST">
-            <div >
-                <label for="">Nome:</label>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
                 <input type="text" class="form-control" name="nome">
             </div>
             <div class="form-group">

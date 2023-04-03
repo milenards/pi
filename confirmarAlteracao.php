@@ -7,7 +7,7 @@ $telefone = $_POST['telefone'];
 $observacao = $_POST['obs'];
 
 
-$sqlAltera = "OUPDATE cad_Clientes SET nome = '$nome', email, telefone, obs) VALUES ('$nome', '$email', '$telefone', '$observacao')";
+$sqlAltera = "UPDATE cad_Clientes SET nome = '$nome', email, telefone, obs) VALUES ('$nome', '$email', '$telefone', '$observacao')";
 
 
 if ($conexao->query($sqlAltera) === TRUE) {
