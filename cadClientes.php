@@ -1,6 +1,7 @@
 <?php include_once "conexao.php";  ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,15 @@
 </head>
 
 <body>
-<h1 class="text-center mt-5 mb-3">Cadastro de Cliente</h1>
-<?php
-include_once "formulario.php"
+    <h1 class="text-center mt-5 mb-3">Cadastro de Cliente</h1>
+    <?php
+    include_once "formulario.php"
 
-?>
+    ?>
+    <div class="container">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>

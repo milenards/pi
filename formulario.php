@@ -18,7 +18,7 @@
                 <label for="obs">Observação:</label>
                 <input type="text" class="form-control" id="obs" name="obs" required>
             </div>
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <!-- <button type="submit" class="btn btn-primary">Cadastrar</button> -->
         </form>
     </div>
 
