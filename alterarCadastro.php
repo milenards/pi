@@ -1,3 +1,35 @@
+<?php
+
+if(!empty($_GET['id'])){
+
+    include_once "conexao.php";
+
+    $id = $_GET['id'];
+
+    $sqlSelect = "SELECT * FROM cad_clientes WHERE id=$id";
+
+    $result = $conexao->query($sqlSelect);
+
+    if($result->num_rows > 0)
+    {
+        while($user_data = mysqli_fetch_assoc($result))
+        {
+            $nome = $user_data['nome'];
+            $email = $user_data['email'];
+            $telefone = $user_data['telefone'];
+            $observacao = $user_data['obs'];
+        }
+        
+    }
+    else
+    {
+        header(('Location: cadClientes.php'));
+    }
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,40 +40,30 @@
     <title>Alterar cadastro</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-<?php
-
-include_once "conexao.php";
-
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$telefone = $_POST['telefone'];
-$observacao = $_POST['obs'];
-
-
-?>
 
 <body>
     <h3 class="text-center mt-5 mb-3">Alterar Cadastro</h3>
     <div class="container">
         <!-- <h1 class="text-center mt-5 mb-3">Cadastro de Cliente</h1> -->
 
-        <form action="validarConexao.php" method="POST">
+        <form action="confirmarAlteracao.php" method="POST">
             <div class="form-group">
                 <label for="nome">Nome:</label>
-                <input type="text" class="form-control" name="nome">
+                <input type="text" class="form-control" name="nome" value="<?php echo $nome ?>" >
             </div>
             <div class="form-group">
                 <label for="email">E-mail:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <input type="email" class="form-control" id="email" name="email" required value="<?php echo $email ?>" >
             </div>
             <div class="form-group">
                 <label for="telefone">Telefone:</label>
-                <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                <input type="tel" class="form-control" id="telefone" name="telefone" required value=" <?php echo $telefone ?>" > 
             </div>
             <div class="form-group">
                 <label for="obs">Observação:</label>
-                <input type="text" class="form-control" id="obs" name="obs" required>
+                <input type="text" class="form-control" id="obs" name="obs" required value="<?php echo $observacao ?>">
             </div>
+            <input type="submit" name="update" id="update">
             <button type="submit" class="btn btn-primary">Alterar Cadastro</button>
         </form>
     </div>
