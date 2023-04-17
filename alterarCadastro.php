@@ -27,9 +27,9 @@ if(!empty($_GET['id'])){
     }
 
 }
-
-
 ?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -63,8 +63,9 @@ if(!empty($_GET['id'])){
                 <label for="obs">Observação:</label>
                 <input type="text" class="form-control" id="obs" name="obs" required value="<?php echo $observacao ?>">
             </div>
+            <input type="hidden" name="id" value="<?php echo $id ?>">
             <input type="submit" name="update" id="update">
-            <button type="submit" class="btn btn-primary">Alterar Cadastro</button>
+            <!-- <button type="submit" class="btn btn-primary">Alterar Cadastro</button> -->
         </form>
     </div>
 </body>
