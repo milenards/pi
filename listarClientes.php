@@ -25,23 +25,22 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                    <th scope="col">ID</th>
                     <th scope="col">Nome</th>
                     <th scope="col">Email</th>
                     <th scope="col">Telefone</th>
-                    <th scope="col">Obrservação</th>
+                    <th scope="col">Observação</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                while($user_data = mysqli_fetch_assoc($result))
-                {
+                while ($user_data = mysqli_fetch_assoc($result)) {
                     echo "<tr>";
-                    echo "<td>".$user_data['id']."</td>";
-                    echo "<td>".$user_data['nome']."</td>";
-                    echo "<td>".$user_data['email']."</td>";
-                    echo "<td>".$user_data['telefone']."</td>";
-                    echo "<td>".$user_data['obs']."</td>";
+                    echo "<td>" . $user_data['id'] . "</td>";
+                    echo "<td>" . $user_data['nome'] . "</td>";
+                    echo "<td>" . $user_data['email'] . "</td>";
+                    echo "<td>" . $user_data['telefone'] . "</td>";
+                    echo "<td>" . $user_data['obs'] . "</td>";
                     echo "<td>
                     
                     <a class ='btn btn-primary' href='alterarCadastro.php?id=$user_data[id]'>
@@ -51,8 +50,7 @@
 </svg>
 
 </td>";
-echo "</tr>";
-
+                    echo "</tr>";
                 }
                 ?>
             </tbody>
