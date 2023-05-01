@@ -17,7 +17,7 @@ if(!empty($_GET['id'])){
         
     }
 }
-header(('Location: cadClientes.php'));
+header(('Location: listarClientes.php'));
 
 
 ?>
