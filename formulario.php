@@ -4,11 +4,11 @@
     <form action="validarConexao.php" method="POST">
         <div class="form-group">
             <label for="nome">Nome:</label>
-            <input type="text" class="form-control" name="nome">
+            <input type="text" class="form-control" name="nome"required>
         </div>
         <div class="form-group">
             <label for="email">E-mail:</label>
-            <input type="email" class="form-control" id="email" name="email" required>
+            <input type="email" class="form-control" id="email" name="email">
         </div>
         <div class="form-group">
             <label for="telefone">Telefone:</label>
@@ -16,10 +16,15 @@
         </div>
         <div class="form-group">
             <label for="obs">Observação:</label>
-            <input type="text" class="form-control" id="obs" name="obs" required>
+            <input type="text" class="form-control" id="obs" name="obs">
         </div>
+        <div class="text-center mt-5 mb-3">
         <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <a href="inicio.php" class="btn btn-primary">Voltar</a>
+        </div>
+
     </form>
+    
 </div>
 
 <!-- Incluindo do Bootstrap -->

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1>Olá</h1>
+    
     <div class="container">
         <div class="text-center mt-5 mb-3" >
         <a href="cadClientes.php" class="btn btn btn-outline-secondary">Cadastrar Clientes</a>

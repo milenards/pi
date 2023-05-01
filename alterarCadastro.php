@@ -44,7 +44,6 @@ if(!empty($_GET['id'])){
 <body>
     <h3 class="text-center mt-5 mb-3">Alterar Cadastro</h3>
     <div class="container">
-        <!-- <h1 class="text-center mt-5 mb-3">Cadastro de Cliente</h1> -->
 
         <form action="confirmarAlteracao.php" method="POST">
             <div class="form-group">
@@ -61,10 +60,11 @@ if(!empty($_GET['id'])){
             </div>
             <div class="form-group">
                 <label for="obs">Observação:</label>
-                <input type="text" class="form-control" id="obs" name="obs" required value="<?php echo $observacao ?>">
+                <input type="text" class="form-control" id="obs" name="obs" value="<?php echo $observacao ?>">
             </div>
             <input type="hidden" name="id" value="<?php echo $id ?>">
             <input type="submit" name="update" id="update">
+            <a href="inicio.php" class="btn btn-primary">Voltar</a>
             <!-- <button type="submit" class="btn btn-primary">Alterar Cadastro</button> -->
         </form>
     </div>

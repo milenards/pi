@@ -24,7 +24,7 @@ $sql = "INSERT INTO cad_Clientes (nome, email, telefone, obs) VALUES ('$nome', '
 
 
 if ($conexao->query($sql) === TRUE) {
-    echo '<div class="alert alert-success" role="alert">Registro inserido com sucesso!</div>';
+    echo '<div class="container py-5"</div> <div class="alert alert-success">Registro inserido com sucesso!</div></div>';
 } else {
     echo "Erro ao inserir registro: " . $conexao->error;
 }
@@ -33,11 +33,10 @@ if ($conexao->query($sql) === TRUE) {
 mysqli_close($conexao);
 
 ?>
+<div class="container"><a href="inicio.php" class="btn btn-primary">Voltar</a></div>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     
-
-
 </body>
 </html>
 

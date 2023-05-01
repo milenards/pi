@@ -16,9 +16,7 @@
 
     ?>
     <form>
-        <div class="container">
-            <!-- <button type="submit" class="btn btn-primary">Cadastrar</button> -->
-        </div>
+       
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </form>
 </body>
