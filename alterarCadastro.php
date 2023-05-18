@@ -48,11 +48,11 @@ if(!empty($_GET['id'])){
         <form action="confirmarAlteracao.php" method="POST">
             <div class="form-group">
                 <label for="nome">Nome:</label>
-                <input type="text" class="form-control" name="nome" value="<?php echo $nome ?>" >
+                <input type="text" class="form-control" name="nome" required value="<?php echo $nome ?>" >
             </div>
             <div class="form-group">
                 <label for="email">E-mail:</label>
-                <input type="email" class="form-control" id="email" name="email" required value="<?php echo $email ?>" >
+                <input type="email" class="form-control" id="email" name="email"  value="<?php echo $email ?>" >
             </div>
             <div class="form-group">
                 <label for="telefone">Telefone:</label>
