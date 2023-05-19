@@ -1,9 +1,7 @@
 function confirmarExclusao(id) {
-  let excluir = confirm("Excluir o cliente")
-  if (excluir == true) {
+  if (confirm('Tem certeza de que deseja excluir este cadastro?'))
 
     window.location.href = "delete.php? id=" + id;
 
   }
 
-}
