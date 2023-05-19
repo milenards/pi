@@ -64,7 +64,7 @@ if(!empty($_GET['id'])){
             </div>
             <input type="hidden" name="id" value="<?php echo $id ?>">
             <input type="submit" name="update" id="update">
-            <a href="inicio.php" class="btn btn-primary">Voltar</a>
+            <a href="listarClientes.php" class="btn btn-primary">Voltar</a>
             <!-- <button type="submit" class="btn btn-primary">Alterar Cadastro</button> -->
         </form>
     </div>
