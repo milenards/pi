@@ -19,5 +19,4 @@ if(!empty($_GET['id'])){
 }
 header(('Location: listarClientes.php'));
 
-
 ?>
