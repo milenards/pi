@@ -63,11 +63,16 @@ if(!empty($_GET['id'])){
                 <input type="text" class="form-control" id="obs" name="obs" value="<?php echo $observacao ?>">
             </div>
             <input type="hidden" name="id" value="<?php echo $id ?>">
-            <input type="submit" name="update" id="update">
+
+            <input type="submit" name="update" id="update" class="btn btn-primary" href>
             <a href="listarClientes.php" class="btn btn-primary">Voltar</a>
-            <!-- <button type="submit" class="btn btn-primary">Alterar Cadastro</button> -->
+
+
+
         </form>
     </div>
+
+    
 </body>
 
 </html>

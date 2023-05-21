@@ -19,7 +19,7 @@
             <input type="text" class="form-control" id="obs" name="obs">
         </div>
         <div class="text-center mt-5 mb-3">
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <button type="submit" class="btn btn-primary" >Cadastrar</button>
         <a href="inicio.php" class="btn btn-primary">Voltar</a>
         </div>
 

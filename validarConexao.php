@@ -22,9 +22,13 @@ $observacao = $_POST['obs'];
 
 $sql = "INSERT INTO cad_Clientes (nome, email, telefone, obs) VALUES ('$nome', '$email', '$telefone', '$observacao')";
 
+session_start();
 
 if ($conexao->query($sql) === TRUE) {
-    echo '<div class="container py-5"</div> <div class="alert alert-success">Registro inserido com sucesso!</div></div>';
+    $_SESSION['alerta'] = '<div class="container py-5"</div> <div class="alert alert-success">Registro inserido com sucesso!</div></div>';
+    
+    header('location: listarClientes.php');
+    exit();
 } else {
     echo "Erro ao inserir registro: " . $conexao->error;
 }
@@ -33,7 +37,8 @@ if ($conexao->query($sql) === TRUE) {
 mysqli_close($conexao);
 
 ?>
-<div class="container"><a href="inicio.php" class="btn btn-primary">Voltar</a></div>
+
+<!-- <div class="container"><a href="inicio.php" class="btn btn-primary">Voltar</a></div> -->
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     
